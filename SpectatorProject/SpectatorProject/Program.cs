@@ -16,6 +16,14 @@ namespace SpectatorProject
         /// <summary>
         /// Név osztály
         /// </summary>
+        class Name
+        {
+            /// <summary>
+            /// rejtett adattagok
+            /// </summary>
+            private string firstName;
+            private string lastName;
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
