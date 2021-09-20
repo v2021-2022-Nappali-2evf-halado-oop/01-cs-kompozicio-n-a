@@ -23,6 +23,17 @@ namespace SpectatorProject
             /// </summary>
             private string firstName;
             private string lastName;
+
+            //konstruktor
+            public Name(string lastName, string firstName)
+            {
+                this.FirstName = firstName;
+                this.LastName = lastName;
+            }
+
+            public string FirstName { get => firstName; set => firstName = value; }
+            public string LastName { get => lastName; set => lastName = value; }
+
         }
         static void Main(string[] args)
         {
