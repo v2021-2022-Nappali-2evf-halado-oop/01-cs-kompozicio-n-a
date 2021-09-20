@@ -67,6 +67,19 @@ namespace SpectatorProjekt
             private Creditcard creditCard;
             private Bonuscard bonusCard;
 
+            /// <summary>
+            /// konstruktorok
+            /// </summary>
+            /// <param name="name"></param>
+            /// <param name="creditCard"></param>
+            /// <param name="bonusCard"></param>
+            public Spectator(Name name, Creditcard creditCard, Bonuscard bonusCard)
+            {
+                this.name = name;
+                this.creditCard = creditCard;
+                this.bonusCard = bonusCard;
+            }
+
 
            
         static void Main(string[] args)
