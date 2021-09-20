@@ -34,6 +34,22 @@ namespace SpectatorProject
             public string FirstName { get => firstName; set => firstName = value; }
             public string LastName { get => lastName; set => lastName = value; }
 
+            public string FullName
+            {
+                get
+                {
+                    return firstName + " " + lastName;
+                }
+            }
+
+            public override string ToString()
+            {
+                return "Néző neve: " + FullName;
+            }
+
+
+        }
+
         }
         static void Main(string[] args)
         {
