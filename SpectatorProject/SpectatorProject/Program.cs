@@ -46,11 +46,18 @@ namespace SpectatorProject
             {
                 return "Néző neve: " + FullName;
             }
-
-
-        }
-
-        }
+        /// <summary>
+        /// Néző osztály
+        /// </summary>
+        class Spectator
+        {
+            /// <summary>
+            /// rejtett adattagok
+            /// </summary>
+            private Name name;
+            private Creditcard creditCard;
+            private Bonuscard bonusCard;
+            }
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
