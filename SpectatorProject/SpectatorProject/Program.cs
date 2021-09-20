@@ -1,6 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
-namespace SpectatorProject
+namespace SpectatorProjekt
 {
     class Program
     {
@@ -46,6 +52,9 @@ namespace SpectatorProject
             {
                 return "Néző neve: " + FullName;
             }
+
+
+        }
         /// <summary>
         /// Néző osztály
         /// </summary>
@@ -57,7 +66,9 @@ namespace SpectatorProject
             private Name name;
             private Creditcard creditCard;
             private Bonuscard bonusCard;
-            }
+
+
+           
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
