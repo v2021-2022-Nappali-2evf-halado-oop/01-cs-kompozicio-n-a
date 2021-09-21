@@ -161,6 +161,39 @@ namespace SpectatorProject
             }
         }
 
+        /// <summary>
+        /// Néző osztály
+        /// </summary>
+        class Spectator
+        {
+            /// <summary>
+            /// rejtett adattagok
+            /// </summary>
+            private Name name;
+            private Creditcard creditCard;
+            private Bonuscard bonusCard;
+
+            /// <summary>
+            /// konstruktorok
+            /// </summary>
+            /// <param name="name"></param>
+            /// <param name="creditCard"></param>
+            /// <param name="bonusCard"></param>
+            public Spectator(Name name, Creditcard creditCard, Bonuscard bonusCard)
+            {
+                this.name = name;
+                this.creditCard = creditCard;
+                this.bonusCard = bonusCard;
+            }
+
+            public override string ToString()
+            {
+                string result = "Néző adatai: \n";
+                result += name + "\n" + creditCard + "\n" + bonusCard;
+                return result;
+            }
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
