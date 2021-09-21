@@ -196,7 +196,32 @@ namespace SpectatorProject
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Name name = new Name("László", "Látó");
+            Console.WriteLine("Teljes név tulajdonság: " + name.FullName);
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("hu-HU");
+            DateTime expiredDate = new DateTime(2022, 3, 15);
+            string dateString = expiredDate.ToString();
+            Creditcard creditCard = new Creditcard("11", expiredDate);
+            if (creditCard.Expired)
+            {
+                Console.WriteLine("Lejárat tulajdonság: Lejárt");
+            }
+            else
+            {
+                Console.WriteLine("Lejárat tulajdonság: Nem Lejárt");
+            }
+            Status status = Status.Active;
+            Bonuscard bonusCard = new Bonuscard("12", status, 30000);
+            if (bonusCard.Useable)
+            {
+                Console.WriteLine("Próba: a bónuszkártya használható");
+            }
+            Spectator spectator = new Spectator(name, creditCard, bonusCard);
+            Console.WriteLine(spectator);
+
+
+
+            Console.ReadKey();
         }
 
 
